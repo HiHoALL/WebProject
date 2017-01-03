@@ -5,7 +5,6 @@
     <p>
         <a href="index">Главная</a> |
         <a href="films">Фильмы</a> |
-        <a href="#">Сериалы</a> |
         <a href="rating">Рейтинг фильмов</a> |
         <a href="contact">Контакты</a>
     </p>

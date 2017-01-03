@@ -23,14 +23,14 @@ public class MoviesController {
     @Autowired
     private TheService<Movies> moviesTheService;
 
-    @RequestMapping("/get")
+    @GetMapping("/get")
     public String get(Model model) {
         List<Movies> movies = moviesTheService.getList();
         model.addAttribute("movies", movies);
         return "films-get";
     }
 
-    @RequestMapping("/getBestFour")
+    @GetMapping("/getBestFour")
     public String getLastFour(Model model) {
         List<Movies> tempList = moviesTheService.getListOrderBy("rating", "DESC");
         List<Movies> movies = new LinkedList<>();
@@ -42,7 +42,7 @@ public class MoviesController {
         return "movies-get-best-four";
     }
 
-    @RequestMapping("/getBestFourSidebar")
+    @GetMapping("/getBestFourSidebar")
     public String getBestFourSidebar(Model model) {
         List<Movies> tempList = moviesTheService.getListOrderBy("rating", "DESC");
         List<Movies> movies = new LinkedList<>();
@@ -54,14 +54,14 @@ public class MoviesController {
         return "movies-get-best-four-sidebar";
     }
 
-    @RequestMapping("/getOrderByRating")
+    @GetMapping("/getOrderByRating")
     public String getOrderByRating(Model model) {
         List<Movies> movies = moviesTheService.getListOrderBy("rating", "DESC");
         model.addAttribute("movies", movies);
         return "rating";
     }
 
-    @RequestMapping("/getShow")
+    @GetMapping("/getShow")
     public String getShow(Model model,
                           @RequestParam("idmovie") int idmovie) {
         //getList movie by id
@@ -69,18 +69,6 @@ public class MoviesController {
 
         model.addAttribute("movie", movie);
         return "forward:/show2";
-    }
-
-    @PostMapping("/add")
-    public String add(@RequestParam("namemovie") String namemovie,
-                      @RequestParam("timefilmed") String timefilmed,
-                      @RequestParam("description") String description,
-                      @RequestParam("director") String director,
-                      @RequestParam("logo") String logo,
-                      @RequestParam("video") String video) {
-        Movies theMovie = new Movies(namemovie, timefilmed, description, director, logo, video);
-        moviesTheService.add(theMovie);
-        return "redirect:/movies/get";
     }
 
     @PostMapping("/search")

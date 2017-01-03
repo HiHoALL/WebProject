@@ -24,14 +24,7 @@ public class Comments2Controller {
     @Autowired
     private TheService<Comments2> comments2TheService;
 
-    @RequestMapping("/get")
-    public String get(Model model) {
-        List<Comments2> comments2 = comments2TheService.getList();
-        model.addAttribute("comments2", comments2);
-        return "comments2-get";
-    }
-
-    @RequestMapping("/getComments")
+    @PostMapping("/getComments")
     public String getComments(Model model,
                               @RequestParam("idmovie") int idmovie) {
         List<Comments2> comments = comments2TheService.getList(idmovie);
@@ -42,6 +35,7 @@ public class Comments2Controller {
         Collections.reverse(shallowCopy);
 
         model.addAttribute("comments", shallowCopy);
+
         return "commentsblock-newdb";
     }
 

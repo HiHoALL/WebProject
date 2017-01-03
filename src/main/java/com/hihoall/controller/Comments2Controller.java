@@ -5,6 +5,7 @@ import com.hihoall.service.TheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -24,14 +25,14 @@ public class Comments2Controller {
     @Autowired
     private TheService<Comments2> comments2TheService;
 
-    @RequestMapping("/get")
+    @GetMapping("/get")
     public String get(Model model) {
         List<Comments2> comments2 = comments2TheService.getList();
         model.addAttribute("comments2", comments2);
         return "comments2-get";
     }
 
-    @RequestMapping("/getComments")
+    @GetMapping("/getComments")
     public String getComments(Model model,
                               @RequestParam("idmovie") int idmovie) {
         List<Comments2> comments = comments2TheService.getList(idmovie);

@@ -26,9 +26,7 @@
         <section>
             <article>
                 <div id="content">
-
                     <table>
-
                         <tr>
                             <th>namemovie</th>
                             <th>timefilmed</th>
@@ -36,15 +34,12 @@
                         </tr>
 
                         <c:forEach var="temp" items="${movies}">
-
                             <tr>
                                 <td> ${temp.namemovie} </td>
                                 <td> ${temp.timefilmed} </td>
                                 <td> ${temp.rating} </td>
                             </tr>
-
                         </c:forEach>
-
                     </table>
                 </div>
             </article>

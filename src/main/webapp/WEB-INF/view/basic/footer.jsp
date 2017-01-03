@@ -10,6 +10,6 @@
         <a href="contact">Контакты</a>
     </p>
     <p>
-        This site <%= Calendar.getInstance().get(Calendar.YEAR) %>
+        Всё О Кино &copy; <%= Calendar.getInstance().get(Calendar.YEAR) %>
     </p>
 </div>

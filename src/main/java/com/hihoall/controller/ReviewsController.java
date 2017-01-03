@@ -4,9 +4,7 @@ import com.hihoall.entity.Reviews;
 import com.hihoall.service.TheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by Brightsunrise on 30.12.2016.
@@ -24,6 +22,11 @@ public class ReviewsController {
                       @RequestParam("review_text") String review_text) {
         Reviews theMovie = new Reviews(review_name, review_email, review_text);
         reviewsTheService.add(theMovie);
-        return "redirect:/contact";
+        return "redirect:/reviews/success";
+    }
+
+    @GetMapping("/success")
+    public String success() {
+        return "contact-success";
     }
 }

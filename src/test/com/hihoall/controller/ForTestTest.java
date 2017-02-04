@@ -13,6 +13,6 @@ public class ForTestTest {
         String actual = "privet";
         String expected = new ForTest().method(actual);
 
-        assertEquals(expected + "zxcvj", actual);
+        assertEquals(expected, actual);
     }
 }

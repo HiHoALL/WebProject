@@ -5,6 +5,6 @@ package com.hihoall.controller;
  */
 public class ForTest {
     public String method(String s) {
-        return s;
+        return s + " ";
     }
 }

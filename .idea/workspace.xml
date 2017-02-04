@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4c5b83d9-a6b7-4a1d-bf29-13f02a9d5797" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hihoall/controller/ForTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/hihoall/controller/ForTest.java" />
     </list>
     <ignored path="kino_project.iws" />
@@ -29,11 +28,11 @@
       <file leaf-file-name="ForTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hihoall/controller/ForTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
               <folding>
                 <element signature="e#142#143#0" expanded="true" />
-                <element signature="e#172#173#0" expanded="true" />
+                <element signature="e#166#167#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -761,7 +760,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1486219641107</updated>
-      <workItem from="1486219648662" duration="1226000" />
+      <workItem from="1486219648662" duration="1381000" />
     </task>
     <servers />
   </component>
@@ -772,9 +771,12 @@
     <history-entry file="ForTestTest - 2017.02.04 at 18h 14m 59s.xml">
       <configuration name="ForTestTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ForTestTest - 2017.02.04 at 18h 17m 54s.xml">
+      <configuration name="ForTestTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1226000" />
+    <option name="totallyTimeSpent" value="1381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="363" y="131" width="1461" height="825" extended-state="0" />
@@ -843,11 +845,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hihoall/controller/ForTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding>
             <element signature="e#142#143#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
           </folding>
         </state>
       </provider>
